@@ -20,15 +20,23 @@
     <a href="terms.html">Terms of Service</a>
   </nav>
   <hr>
-  <p>This is a personal, single-user automated trading bot that manages my
-  own paper-trading (simulated, no real money) options positions on
-  Charles Schwab. It uses the Gmail API, with the <code>gmail.send</code>
-  scope only, to email a single alert address (my own) when a position
-  requires manual review &mdash; for example, when an option leg expires
-  in-the-money and the bot has no logic to handle the resulting stock
-  position automatically.</p>
-  <p>This application is not distributed to the public and is not intended
-  for use by anyone other than its developer.</p>
+  <h2>What this application is</h2>
+  <p><strong>Trading Bot Alerts</strong> is a personal software tool, built
+  and used by a single individual (the developer), that automates a
+  paper-trading (simulated, no real money) options trading strategy against
+  the Charles Schwab brokerage API. It is not a public product, is not
+  distributed to anyone else, and has exactly one user: its developer.</p>
+
+  <h2>What it uses the Gmail API for</h2>
+  <p>The application requests one Gmail scope, <code>gmail.send</code>, for
+  exactly one purpose: to email the developer's own inbox a plain-text alert
+  when the trading bot hits a situation it cannot resolve automatically
+  &mdash; for example, when a simulated options contract expires
+  in-the-money and the bot has no logic to detect or unwind the resulting
+  position, so the developer needs to check it by hand. The application
+  never reads, searches, modifies, or deletes anything in any mailbox, and
+  it only ever sends mail to its own developer.</p>
+
   <p>Contact: <a href="mailto:4chaffee@gmail.com">4chaffee@gmail.com</a></p>
 </body>
 </html>
